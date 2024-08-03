@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mock data for medal rankings
     const medals = [
         { country: 'United States', gold: 10, silver: 5, bronze: 3 },
         { country: 'China', gold: 8, silver: 7, bronze: 2 },
@@ -22,14 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    // Mock data for news updates
     const news = [
         { headline: 'The United States Wins Gold in Basketball' },
         { headline: 'Record-breaking Performance in Singles Gymnastics by Simone Biles' },
         { headline: 'LeBron James Absolutely Dominates and Kills Victor Wembanyama' }
     ];
 
-    // Function to populate medal rankings
     const medalList = document.getElementById('medal-list');
     medals.forEach(medal => {
         const li = document.createElement('li');
@@ -37,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         medalList.appendChild(li);
     });
 
-    // Function to populate news updates
     const newsList = document.getElementById('news-list');
     news.forEach(update => {
         const li = document.createElement('li');
@@ -45,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         newsList.appendChild(li);
     });
 
-    // Function to show schedule for a sport
     window.showSchedule = (sport) => {
         const scheduleDiv = document.getElementById('schedule');
         scheduleDiv.textContent = schedules[sport];
