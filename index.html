@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Olympic Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Paris Olympic Games</h1>
+        <img src="olympics.png" alt="Paris Olympic Games Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#medal-rankings">Medal Rankings</a></li>
+            <li><a href="#sports">Sports</a></li>
+            <li><a href="#news">News</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="medal-rankings">
+            <h2>Medal Rankings</h2>
+            <ul id="medal-list">
+                <!-- Medal ranking list will be populated here by JavaScript -->
+            </ul>
+        </section>
+
+        <section id="sports">
+            <h2>Sports</h2>
+            <ul>
+                <li><button onclick="showSchedule('basketball')">Basketball</button></li>
+                <li><button onclick="showSchedule('gymnastics')">Gymnastics</button></li>
+                <li><button onclick="showSchedule('swimming')">Swimming</button></li>
+                <li><button onclick="showSchedule('boxing')">Boxing</button></li>
+                <li><button onclick="showSchedule('soccer')">Soccer</button></li>
+            </ul>
+            <div id="schedule">
+                <!-- Schedule will be populated here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="news">
+            <h2>News</h2>
+            <ul id="news-list">
+                <!-- News updates will be populated here by JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
